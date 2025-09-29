@@ -9,6 +9,7 @@ import {
   GearIcon,
   CircuitIcon,
 } from "@/components/icons";
+import AIRobotAnimation from "@/components/AIRobotAnimation";
 
 /* Inline Target icon để tránh phụ thuộc khác */
 function TargetIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -142,6 +143,28 @@ export default function CompetitionList() {
               </div>
             </div>
           </div>
+          <section className="py-16 md:py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+            <div className="container max-w-6xl px-4 mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl md:text-4xl mb-4">
+                  {t("home.ai.title")}
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  {t("home.ai.lead")}
+                </p>
+              </div>
+
+              <div className="max-w-4xl mx-auto h-[600px]">
+                <AIRobotAnimation />
+              </div>
+
+              <div className="text-center mt-8">
+                <p className="text-muted-foreground max-w-3xl mx-auto">
+                  {t("home.ai.body")}
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* Decorations */}

@@ -192,6 +192,62 @@ const DICTS: Record<Locale, Dict> = {
     "detail.2024.catD.subtitle": "Dự án sản phẩm sáng tạo",
     "detail.2024.catD.desc":
       "Tạo sản phẩm robot sáng tạo giải quyết vấn đề thực tế.",
+    "home.ai.title": "🧠 Robot AI - Tương lai trong tầm tay!",
+    "home.ai.lead":
+      "Khám phá thế giới Trí tuệ Nhân tạo cùng những chú robot thông minh! 🚀✨",
+    "home.ai.body":
+      "Trong cuộc thi MYOR, các bạn sẽ học cách tạo ra những robot có thể tự học, tự suy nghĩ và giải quyết vấn đề như một siêu máy tính thật sự! Hãy cùng khám phá ma thuật của AI! 🎪🤖",
+    "home.ai.overlay.title": "🤖 AI Robot Siêu Thông Minh! 🧠",
+    "home.ai.overlay.desc":
+      "Khám phá thế giới AI cùng robot bạn! Học máy, xử lý dữ liệu, và tư duy như một siêu máy tính! ⚡",
+    // Hero
+    "news.hero.title": "📰 Tin tức & Video MYOR",
+    "news.hero.lead":
+      "Cập nhật tin mới, video hướng dẫn và kết quả thi đấu từ sân chơi robot dành cho học sinh.",
+    "news.badges.videos": "Video",
+    "news.badges.results2025": "Kết quả 2025",
+    "news.badges.updates": "Cập nhật mới",
+
+    // Featured
+    "news.featured.title": "🎬 Video nổi bật từ kênh GARASTEM",
+    "news.featured.lead":
+      "Những video hay nhất về cuộc thi, hướng dẫn và phỏng vấn độc quyền.",
+    "news.video.views": "lượt xem",
+    "news.video.watchNow": "Xem ngay",
+    "news.youtube.more": "Xem thêm trên YouTube GARASTEM",
+
+    // Awards
+    "news.awards.title": "🏆 Lễ Trao Giải MYOR 2025",
+    "news.awards.lead":
+      "Tổng kết cuộc thi lắp ráp và lập trình robot với nhiều giải thưởng hấp dẫn.",
+    "news.event.info": "Thông tin sự kiện",
+    "news.event.date": "Ngày tổ chức",
+    "news.event.venue": "Địa điểm",
+    "news.event.duration": "Thời gian triển khai",
+    "news.scale.title": "Quy mô tham gia",
+    "news.scale.teams": "Đội thi",
+    "news.scale.students": "Thí sinh",
+    "news.scale.schools": "Trường học",
+    "news.scale.provinces": "Tỉnh thành",
+    "news.event.provinces": "Các tỉnh thành tham gia",
+    "news.prizes.total": "Tổng cộng {{total}} giải thưởng được trao",
+    "news.prizes.first": "Giải Nhất",
+    "news.prizes.second": "Giải Nhì",
+    "news.prizes.third": "Giải Ba",
+    "news.prizes.encouragement": "Khuyến khích",
+    "news.prizes.potential": "Tiềm năng",
+    "news.winners.title": "Chúc mừng các nhà vô địch MYOR 2025!",
+    "news.winners.students": "Thí sinh:",
+    "news.winners.school": "Trường:",
+    "news.winners.closing":
+      "Ban tổ chức chúc mừng tất cả thí sinh đã tham gia MYOR năm nay. Hẹn gặp lại ở mùa tới!",
+
+    // CTA
+    "news.cta.title": "🚀 Bạn cũng muốn trở thành nhà vô địch?",
+    "news.cta.lead":
+      "Đăng ký tham gia MYOR 2026 và bắt đầu hành trình chinh phục thế giới robot.",
+    "news.cta.btn.register": "Đăng ký tham gia 2026",
+    "news.cta.btn.moreVideos": "Xem thêm video",
   },
   en: {
     "brand.name": "MYOR Robot",
@@ -368,6 +424,61 @@ const DICTS: Record<Locale, Dict> = {
     "detail.2024.catD.subtitle": "Creative product projects",
     "detail.2024.catD.desc":
       "Build creative robotic products that solve real problems.",
+    "home.ai.title": "🧠 AI Robots — The future in your hands!",
+    "home.ai.lead":
+      "Explore the world of Artificial Intelligence with smart robots! 🚀✨",
+    "home.ai.body":
+      "At MYOR, you’ll learn to build robots that can learn, reason, and solve problems like a real supercomputer. Let’s discover the magic of AI! 🎪🤖",
+    "home.ai.overlay.title": "🤖 Super-Smart AI Robot! 🧠",
+    "home.ai.overlay.desc":
+      "Explore AI with your robot. Learn machine learning, data processing, and think like a supercomputer. ⚡",
+    // Hero
+    "news.hero.title": "📰 MYOR News & Videos",
+    "news.hero.lead":
+      "Latest updates, tutorials, and competition results from the student robotics arena.",
+    "news.badges.videos": "Videos",
+    "news.badges.results2025": "2025 Results",
+    "news.badges.updates": "New updates",
+
+    // Featured
+    "news.featured.title": "🎬 Highlights from GARASTEM",
+    "news.featured.lead":
+      "Top videos: competitions, tutorials, and exclusive interviews.",
+    "news.video.views": "views",
+    "news.video.watchNow": "Watch now",
+    "news.youtube.more": "See more on GARASTEM YouTube",
+
+    // Awards
+    "news.awards.title": "🏆 MYOR 2025 Award Ceremony",
+    "news.awards.lead":
+      "Summary of the robotics competition with many exciting prizes.",
+    "news.event.info": "Event info",
+    "news.event.date": "Date",
+    "news.event.venue": "Venue",
+    "news.event.duration": "Duration",
+    "news.scale.title": "Participation scale",
+    "news.scale.teams": "Teams",
+    "news.scale.students": "Students",
+    "news.scale.schools": "Schools",
+    "news.scale.provinces": "Provinces",
+    "news.event.provinces": "Participating provinces",
+    "news.prizes.total": "A total of {{total}} prizes were awarded",
+    "news.prizes.first": "First prizes",
+    "news.prizes.second": "Second prizes",
+    "news.prizes.third": "Third prizes",
+    "news.prizes.encouragement": "Encouragement",
+    "news.prizes.potential": "Potential",
+    "news.winners.title": "Congrats to MYOR 2025 Champions!",
+    "news.winners.students": "Students:",
+    "news.winners.school": "School:",
+    "news.winners.closing":
+      "Congratulations to all participants this year. See you in the next season!",
+
+    // CTA
+    "news.cta.title": "🚀 Want to be a champion too?",
+    "news.cta.lead": "Register for MYOR 2026 and begin your robotics journey.",
+    "news.cta.btn.register": "Register for 2026",
+    "news.cta.btn.moreVideos": "More videos",
   },
 };
 

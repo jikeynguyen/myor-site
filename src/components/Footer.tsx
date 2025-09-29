@@ -84,7 +84,7 @@ export default function Footer() {
             <nav className="space-y-2 text-sm">
               <Link href="/">{t("nav.home")}</Link>
               <Link href="/cuoc-thi/">{t("nav.competitions")}</Link>
-              <Link href="/the-le/">{t("nav.rules")}</Link>
+
               <Link href="/tin-tuc/">{t("nav.news")}</Link>
             </nav>
           </div>
@@ -99,7 +99,7 @@ export default function Footer() {
                 </span>
                 <div>
                   <div className="text-muted-foreground">Hotline</div>
-                  <div>0123 456 789</div>
+                  <div>0703 055 745 (Ms Ngân)</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -117,7 +117,7 @@ export default function Footer() {
                 </span>
                 <div>
                   <div className="text-muted-foreground">Địa chỉ</div>
-                  <div>123 Đường Robot, Hà Nội</div>
+                  <div>1/1N Đ. Tô Ký, Mỹ Huề, Hóc Môn, Hồ Chí Minh</div>
                 </div>
               </div>
             </div>

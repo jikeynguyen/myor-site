@@ -11,7 +11,6 @@ import {
   HomeIcon,
   NewsIcon,
   CalendarIcon,
-  TrophyIcon,
 } from "./icons";
 
 export default function Header() {
@@ -23,7 +22,7 @@ export default function Header() {
   const items = [
     { label: t("nav.home"), href: "/", Icon: HomeIcon },
     { label: t("nav.competitions"), href: "/cuoc-thi/", Icon: CalendarIcon },
-    { label: t("nav.rules"), href: "/the-le/", Icon: TrophyIcon },
+
     { label: t("nav.news"), href: "/tin-tuc/", Icon: NewsIcon },
   ];
   const isActive = (h: string) =>

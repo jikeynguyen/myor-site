@@ -4,6 +4,8 @@ import { useLocale } from "@/i18n/LocaleProvider";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import AnimatedRobot from "@/components/animatedrobot";
+import CircleTrack from "@/components/simplebottrack";
 
 /* ---------- Minimal inline icons (no external deps) ---------- */
 function RobotIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -71,8 +73,8 @@ function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElement>) {
           alt="Error loading image"
           {...rest}
           data-original-url={src}
-          width={100} // Replace with appropriate dimensions
-          height={100} // Replace with appropriate dimensions
+          width={100}
+          height={100}
         />
       </div>
     </div>
@@ -84,8 +86,8 @@ function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElement>) {
       style={style}
       {...rest}
       onError={handleError}
-      width={100} // Replace with appropriate dimensions
-      height={100} // Replace with appropriate dimensions
+      width={100}
+      height={100}
     />
   );
 }
@@ -124,6 +126,7 @@ export default function Page() {
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-primary/15 py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+            {/* Hero Section with Circle Track */}
             <div className="space-y-6">
               <div className="inline-flex items-center space-x-2 rounded-full bg-primary/10 px-4 py-2 text-primary animate-bounce">
                 <div className="h-5 w-5">
@@ -154,14 +157,8 @@ export default function Page() {
             </div>
 
             {/* hình minh họa giữ nguyên */}
-            <div className="relative">
-              <div className="aspect-square overflow-hidden rounded-3xl border-4 border-primary/20 bg-gradient-to-br from-primary/10 to-primary/20 shadow-2xl transition hover:scale-105">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1605627079912-97c3810a11a4?q=80&w=1080&auto=format&fit=crop"
-                  alt="Kids play with robots"
-                  className="h-full w-full object-cover"
-                />
-              </div>
+            <div className="relative border-2 border-border/50 rounded-3xl bg-gradient-to-br from-background to-primary/5 p-4 shadow-lg">
+              <CircleTrack />
               <div className="absolute -right-4 -top-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground animate-pulse">
                 <StarIcon />
               </div>
@@ -235,7 +232,7 @@ export default function Page() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <a
+            <Link
               href="/the-le/"
               className="group rounded-3xl border-2 border-border bg-gradient-to-br from-background to-primary/5 p-8 transition hover:scale-105 hover:shadow-xl hover:border-primary"
             >
@@ -246,7 +243,7 @@ export default function Page() {
                 {t("home.hl.1.title")}
               </h3>
               <p className="text-muted-foreground">{t("home.hl.1.desc")}</p>
-            </a>
+            </Link>
 
             <Link
               href="/cuoc-thi/"
@@ -292,6 +289,7 @@ export default function Page() {
             </div>
 
             <div className="relative z-10">
+              <AnimatedRobot />
               <div className="mb-4 inline-flex items-center space-x-2">
                 <div className="h-8 w-8 text-primary">
                   <RobotIcon />

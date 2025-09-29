@@ -1,4 +1,3 @@
-// src/app/cuoc-thi/[id]/page.tsx
 import DetailClient from "./DetailClient";
 
 export const dynamicParams = false;
