@@ -1,7 +1,9 @@
 "use client";
 
 import { useLocale } from "@/i18n/LocaleProvider";
+import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 /* ---------- Minimal inline icons (no external deps) ---------- */
 function RobotIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -64,22 +66,26 @@ function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElement>) {
       style={style}
     >
       <div className="flex h-full w-full items-center justify-center">
-        <img
+        <Image
           src={ERROR_IMG_SRC}
           alt="Error loading image"
           {...rest}
           data-original-url={src}
+          width={100} // Replace with appropriate dimensions
+          height={100} // Replace with appropriate dimensions
         />
       </div>
     </div>
   ) : (
-    <img
-      src={src}
-      alt={alt}
+    <Image
+      src={typeof src === "string" ? src : ""}
+      alt={alt || "Image"}
       className={className}
       style={style}
       {...rest}
       onError={handleError}
+      width={100} // Replace with appropriate dimensions
+      height={100} // Replace with appropriate dimensions
     />
   );
 }
@@ -132,18 +138,18 @@ export default function Page() {
                 {t("home.lead")}
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <a
+                <Link
                   href="/cuoc-thi/"
                   className="inline-flex items-center justify-center rounded-2xl bg-primary px-6 py-3 text-primary-foreground shadow-lg transition hover:scale-105 hover:bg-primary/90 hover:shadow-xl"
                 >
                   <span>{t("home.cta.primary")}</span>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/cuoc-thi/#dang-ky"
                   className="inline-flex items-center justify-center rounded-2xl border-2 border-primary px-6 py-3 text-primary transition hover:scale-105 hover:bg-primary hover:text-primary-foreground"
                 >
                   <span>{t("home.cta.secondary")}</span>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -242,7 +248,7 @@ export default function Page() {
               <p className="text-muted-foreground">{t("home.hl.1.desc")}</p>
             </a>
 
-            <a
+            <Link
               href="/cuoc-thi/"
               className="group rounded-3xl border-2 border-border bg-gradient-to-br from-background to-primary/5 p-8 transition hover:scale-105 hover:shadow-xl hover:border-primary"
             >
@@ -253,9 +259,9 @@ export default function Page() {
                 {t("home.hl.2.title")}
               </h3>
               <p className="text-muted-foreground">{t("home.hl.2.desc")}</p>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/tin-tuc/"
               className="group rounded-3xl border-2 border-border bg-gradient-to-br from-background to-primary/5 p-8 transition hover:scale-105 hover:shadow-xl hover:border-primary"
             >
@@ -266,7 +272,7 @@ export default function Page() {
                 {t("home.hl.3.title")}
               </h3>
               <p className="text-muted-foreground">{t("home.hl.3.desc")}</p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -299,18 +305,18 @@ export default function Page() {
                 {t("home.cta2.lead")}
               </p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                <a
+                <Link
                   href="/cuoc-thi/#dang-ky"
                   className="inline-flex items-center justify-center rounded-2xl bg-primary px-8 py-4 text-primary-foreground shadow-lg transition hover:scale-105 hover:bg-primary/90 hover:shadow-xl"
                 >
                   <span>{t("home.cta2.primary")}</span>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/cuoc-thi/"
                   className="inline-flex items-center justify-center rounded-2xl border-2 border-primary px-8 py-4 text-primary transition hover:scale-105 hover:bg-primary hover:text-primary-foreground"
                 >
                   <span>{t("home.cta2.secondary")}</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

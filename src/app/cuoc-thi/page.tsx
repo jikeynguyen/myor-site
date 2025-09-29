@@ -1,12 +1,13 @@
 "use client";
 
 import { useLocale } from "@/i18n/LocaleProvider";
+import Image from "next/image";
 import {
   TrophyIcon,
+  RobotIcon,
   StarIcon,
   GearIcon,
   CircuitIcon,
-  RobotIcon,
 } from "@/components/icons";
 
 /* Inline Target icon để tránh phụ thuộc khác */
@@ -165,10 +166,12 @@ export default function CompetitionList() {
                   <div className="grid gap-0 md:grid-cols-2">
                     {/* Image */}
                     <div className="relative aspect-video overflow-hidden md:aspect-square">
-                      <img
+                      <Image
                         src={c.image}
                         alt={c.title}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                       <div className="absolute left-4 top-4">
                         <span

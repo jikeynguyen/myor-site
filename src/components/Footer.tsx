@@ -9,9 +9,6 @@ import {
   FacebookIcon,
   YoutubeIcon,
   InstagramIcon,
-  StarIcon,
-  GearIcon,
-  CircuitIcon,
 } from "./icons";
 
 export default function Footer() {
