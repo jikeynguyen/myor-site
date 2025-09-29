@@ -49,7 +49,7 @@ export default function CompetitionList() {
       statusColor: "bg-green-500",
       description: t("comps.2025.desc"),
       image:
-        "https://res.cloudinary.com/eggoeggoeggoeggo/image/upload/v1759129075/2024_ra4d26.jpg",
+        "https://res.cloudinary.com/eggoeggoeggoeggo/image/upload/v1759129075/2025_ozczjt.jpg",
       registrationDeadline: "27/04/2025",
       finalDate: "14/06/2025",
       stats: {
@@ -74,7 +74,7 @@ export default function CompetitionList() {
       statusColor: "bg-blue-500",
       description: t("comps.2024.desc"),
       image:
-        "https://res.cloudinary.com/eggoeggoeggoeggo/image/upload/v1759129075/2025_ozczjt.jpg",
+        "https://res.cloudinary.com/eggoeggoeggoeggo/image/upload/v1759129075/2024_ra4d26.jpg",
       registrationDeadline: "15/04/2024",
       finalDate: "02/06/2024",
       stats: {
